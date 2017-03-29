@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         //通过在onCreate中直接启动其他活动并关闭自己，可以直接跳转到其他界面而不显示自己
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if(prefs.getString("weather_id",null) != null){
+        if(prefs.getString("weather",null) != null){
             Intent intent = new Intent(this,WeatherActivity.class);
             startActivity(intent);
             finish();

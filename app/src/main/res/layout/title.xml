@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--头布局，一个居中显示城市名，一个居右显示更新时间-->
+<!--头布局，一个切换城市的按钮，一个居中显示城市名，一个居右显示更新时间-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
+
+    <Button
+        android:id="@+id/nav_button"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
 
     <TextView
         android:id="@+id/title_city"

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--通过在布局中引用碎片，可以复用碎片的布局和处理逻辑-->
     <fragment
         android:id="@+id/choose_area_fragment"
         android:layout_width="match_parent"
